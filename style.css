@@ -1,0 +1,501 @@
+/* Importing the OpenSans font */
+@font-face{
+  font-family: OpenSans;
+  src: url(fonts/OpenSans-VariableFont_wdth,wght.ttf);
+  font-display: swap;
+}
+
+/* Importing the Roboto font */
+@font-face{
+  font-family: Roboto;
+  src: url(fonts/Roboto-Regular.ttf);
+  font-display: swap;
+}
+
+/* Importing the UbuntuMono font */
+@font-face{
+  font-family: UbuntuMono;
+  src: url(fonts/UbuntuMono-Regular.ttf);
+  font-display: swap;
+}
+
+/* Sets default padding and margin values to 0 */
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* Applies OpenSans, Calibri or a default serif font to all heading elements */
+h1,h2,h3,h4,h5 {
+  font-family: OpenSans, Calibri, serif;
+}
+
+/* Applies Roboto, Calibri or a default sans serif font to all elements nested in the body or pre elements */
+body,pre {
+  font-family: Roboto, Calibri, sans-serif;
+  color: #222;
+}
+
+/* Applies UbuntuMono, Calibri or a default monospace font to all elements nested in the table cells */
+td {
+  font-family: UbuntuMono, Calibri, monospace;
+}
+
+/* Increases the left margin by 100px to move the LEON logo nearer to the centre */
+img.logo {
+  margin-left: 100px;
+  height: 90px;
+}
+
+/* Changes the navigation bar's background color to grey, changes font to bold and increases font size to 50px */
+nav {
+  width: 100%;
+  background-color: #E8E8E8;
+  font-weight: bolder;
+  position: sticky;
+  height: 80px;
+  top: 0;
+  z-index: 1
+}
+
+/* Moves links to the right and moves right margin to the left by 20 pixels */
+nav ul{
+  float: right;
+  padding-right: 20px;
+}
+
+/* Alligns links so they're next to each other and are located in the middle of the navigation area of the HTML page*/
+nav ul li{
+  display: inline-block;
+  line-height: 90px;
+}
+
+/* Alligns the image captions to the left of the screen and changes its text to grey*/
+figcaption{
+  margin-left: 100px;
+  color: grey;
+}
+
+/* Changes hyperlink colour to black, increases font size from 16 to 19px, leaves space between each navigation button, increases radius of elements's corners when hovered over, converts text to uppercase and removes text underline*/
+nav ul li a{
+  color: black;
+  font-size: 19px;
+  padding: 7px 18px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Increases margin on the left to 100px, changes height and width to relative units for responsiveness and font size to 25 pixels*/
+table {
+  margin-left: 100px;
+  height: 10em;
+  width: 60%;
+  font-size: 25px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+/* Leaves space between each interesting fact/ordered list */
+li{
+  margin: 10px 0;
+}
+
+/* Increases the margin at the top to 30px*/
+form{
+  margin-top: 30px;
+}
+
+/* The navigation button corresponding to the page the user is navigating through is permanently highlighted in white. Navigation buttons that are hovered are also highlighted in white with a brief delay of .5 seconds */
+li a.active, li a:hover{
+  background: #FFFFFF;
+  transition: .5s;
+}
+
+/* Increases padding to the left by 30px*/
+ol, ul{
+  padding-left: 30px;
+}
+
+/* Hides the horizontal rule that is displayed when a thematic break is used */
+hr{
+  visibility: hidden;
+}
+
+/* Makes video responsive to varying screen sizes*/
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Increases the size of the hamburger button, changes the colour of the hamburger button to black, moves the button to the right and alligns the button to the middle of the navigation area of the page. Hamburger button is hidden until width of the page is less than 865 pixels */
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 110px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Increases font size of content sections */
+.sectionContent{
+  font-size: 20px;
+  margin-left: 100px;
+}
+
+/* Increases font size of list sections */
+.sectionList{
+  font-size: 20px;
+  margin-left: 100px;
+}
+
+/* Leaves space around the images used in the facts section in the home page */
+.heading{
+  margin-top: 20px;
+  text-decoration: underline;
+  font-size: 20px;
+  margin-left: 100px;
+}
+
+/* Increases section 1 elements so they are 100 pixels away from the left of the page, 20 pixels away from the top of the page and changes font size to 23 pixels*/
+.section1{
+  margin-left: 100px;
+  margin-top: 20px;
+  font-size: 23px;
+}
+
+/* Increases section 2 elements so they are 100 pixels away from the left of the page, 100 pixels away from the right of the page and changes font size to 23 pixels*/
+.section2{
+  margin-right: 100px;
+  margin-left: 100px;
+  font-size: 23px
+}
+
+/* Alligns the image captions to the left of the screen and changes its text to grey*/
+.contact-form{
+  max-width: 600px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+/* Changes the properties of the form elements for responsiveness and aesthetic purposes*/
+.contact-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: white;
+  padding: 20px 40px;
+  outline: none;
+  color: black;
+  transition: 0.5s;
+  border: 2px solid black;
+}
+
+/* Attaches a shadow to the font elements when the input or text areas are selected aka clicked on */
+.contact-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+}
+
+#Win{
+  margin-left: 100px;
+}
+
+/* Disable the ability to resize the text area and increase its height to 120 pixels */
+textarea.contact-text{
+  resize: none;
+  height: 120px;
+}
+
+/* Changes the arrangement and visual properties of the contact form button*/
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: black;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* When contact form button is hovered over by the user, the colour of it changes to grey */
+.contact-form-btn:hover{
+  background: grey;
+}
+
+/* Elements in the interestsSection floats to the left of the screen */
+.interestsSection {
+  float: left;
+}
+
+/* Changes the width and height of the columns on my 3x3 grid */
+.column {
+  width: 230px;
+  height: 230px;
+  margin: auto;
+}
+
+/* Adds a 1 pixel solid border around the columns of the 3x3 grid */
+div.column {
+  border-style: solid;
+  border-width: 1px;
+}
+
+/* Makes each row responsive */
+.row {
+  width: 100%;
+  margin: auto;
+}
+
+/* Hides the checkbox from the user. The checkbox gives functionality to the hamburger icon */
+#check{
+  display: none;
+}
+
+/* Leaves space around my portrait in the home page, adjusts its size appropriately and moves it to the left of the page */
+#myPortrait{
+  padding: 5px;
+  height: auto;
+  margin-left: 100px;
+  float: left;
+}
+
+#Pilot{
+  margin-left: 100px;
+}
+
+#credit{
+  margin-left: 100px;
+}
+
+/* Area reserved for text that should be next to my portrait on the home page */
+#mainArea1{
+  margin: 70px 100px 100px;
+  font-size: 45px;
+  margin-right: 100px;
+}
+
+/* Area reserved for text that should be underneath my portrait on the home page */
+#mainArea2{
+  display: block;
+  margin-right: 100px;
+  padding-top: 50px;
+}
+
+/* Area reserved for text that should be underneath mainArea2 */
+#mainArea3{
+  margin: 50px 100px;
+}
+
+/* Increases top padding of the work experience section by 25 pixels */
+#wkexp1{
+  padding-top: 25px;
+  margin-left: 100px;
+  font-size: 23px;
+}
+
+/* Increases the left margin by 100 pixels so the 3x3 grid is 100 pixels away from the left of the screen of the 3x3 grid */
+#showgrid{
+  margin-left: 100px;
+  font-size: 23px;
+}
+
+/* Increases the left margin by 100 pixels so the 3x3 grid is 100 pixels away from the left of the screen of the first educataion section  */
+#edu{
+  margin-left: 100px;
+  font-size: 23px;
+}
+
+/* Increases the left margin by 100 pixels so the 3x3 grid is 100 pixels away from the left of the screen of the second educataion section  */
+#edu1{
+  margin-left: 100px;
+  font-size: 23px;
+}
+
+/* Increases the left margin by 100 pixels so the 3x3 grid is 100 pixels away from the left of the screen of the third educataion section */
+#edu2{
+  margin-left: 100px;
+  font-size: 23px;
+}
+
+/* Increases the left margin by 100 pixels so the 3x3 grid is 100 pixels away from the left of the screen of the first work experience section*/
+#wkexp{
+  margin-left: 100px;
+  font-size: 23px;
+}
+
+/* When the width of the page is less than 1251px, portrait no longer floats and adds more space above the text in mainArea2 */
+@media (max-width: 1250px){
+  #mainArea2{
+    margin-top: 50px;
+  }
+
+  #myPortrait{
+    float:none;
+  }
+}
+
+/* When the width of the page is less than 865px, hamburger icon is shown. When the hamburger icon is clicked by the user, the checkbox is checked, displaying the unordered list aka the navigation bar which moves from the left to the right */
+@media (max-width: 884px){
+  .checkbtn{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #E8E8E8;
+    top: 80px;
+    left: -300%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+/* When the width of the page is less than 516px, change navigation bar colour to white, hide the LEON logo, moves hamburger button to the left and move images in the facts section of the home page to the left slightly. Also made divs all responsive. */
+@media (max-width: 590px){
+  .sectionContent{
+    font-size: 5vw;
+    padding: 0;
+    text-align: left;
+    margin: 0;
+  }
+
+  #Pilot{
+    margin: 0;
+  }
+
+  #myPortrait{
+    margin: 0;
+    padding: 0;
+  }
+
+  .heading{
+    font-size: 5vw;
+    padding: 0;
+    text-align: left;
+    margin: 0;
+  }
+
+  .img-fluid{
+    width: 80%;
+    height: auto;
+  }
+
+  .sectionList{
+    font-size: 5vw;
+    margin-left: 5px;
+  }
+
+  #showgrid{
+    margin: 0;
+    width: 100%;
+  }
+
+  #mainArea1{
+    margin: 0;
+    padding: 0;
+    font-size: 5vw;
+  }
+
+  #edu{
+    margin: 0;
+    padding: 0;
+    font-size: 5vw;
+    width: 100%;
+  }
+
+  #edu1{
+    margin: 0;
+    padding: 0;
+    font-size: 5vw;
+    width: 100%;
+  }
+
+  #edu2{
+    margin: 0;
+    padding: 0;
+    font-size: 5vw;
+    width: 100%;
+  }
+
+  #wkexp{
+    margin: 0;
+    padding: 0;
+    font-size: 5vw;
+    width: 100%;
+  }
+
+  #wkexp1{
+    margin: 0;
+    padding: 0;
+    font-size: 5vw;
+    width: 100%;
+  }
+
+  #mainArea2{
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+  }
+
+  #mainArea3{
+    margin: 0;
+    padding: 0;
+  }
+
+  nav img.logo{
+    width: 0px;
+    height: 0px;
+  }
+
+  table{
+    margin: 0;
+  }
+}
+
+/* When the width of the page is less than 1193px, change its display type to block and maintain its original properties*/
+@media (max-width: 1193px){
+  .section1{
+    display: block;
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 23px;
+  }
+}
+
+/* When the width of the page is greater than 698px, increase width to fit the width of the page, create a border for each column and change the row's width to a relative value*/
+@media (min-width:797px) {
+  div#showgrid {
+    width:797px;
+    margin-left: 100px;
+  }
+}
+
+/* When the width of the page is less than 698px, change the column's display to inline and float to the left, maintaining its original properties*/
+@media (min-width: 797px) {
+  .column {
+    width: 230px;
+    height: 230px;
+    display: inline;
+    float: left;
+  }
+}

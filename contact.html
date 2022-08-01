@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Changes title of the webpage according to what webpage the user is on-->
+    <title>Contact | Leon Luc</title>
+    <!--Controls page's dimensions and scaling depending on the screen-width of the device being used-->
+    <meta name="viewport" content="width=device-width"/>
+    <!--Defines the description of the web page-->
+    <meta name="description" content="Home page of Leon Luc's website."/>
+    <!--Uses the UTF-8 character set, which covers almost all of the characters and symbols in the world-->
+    <meta charset="UTF-8">
+    <!--Links CSS stylesheet style.css with home.html -->
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <!--Imports font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <!--Top navigation bar code-->
+    <nav>
+      <!--Imports hamburger icon from font awesome-->
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <!--Logo of my website can be clicked on to take users back to the home page-->
+      <a href="home.html">
+        <img src="images/logo.png" alt="Click to go back to the home page" class="logo" height="100"/>
+      </a>
+      <ul>
+        <!-- List of links to form the navigation bar of my website  -->
+        <li><a href="home.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Contact me section of the page -->
+    <div class="heading">
+      <h1>Contact me</h1>
+    </div>
+    <!-- Contact form -->
+    <div class="sectionContent">
+      <section>
+        <p>Send me any questions using the form below, email me directly at <strong>leon.luc.21@ucl.ac.uk</strong> or call me at <strong>+44 75931 80057</strong>. I'm happy to answer any of your questions as soon as possible.</p>
+        <form class="contact-form">
+          <input type="text" class="contact-text" placeholder="Enter a name">
+          <input type="email" class="contact-text" placeholder="Enter an email address">
+          <input type="text" class="contact-text" placeholder="Enter a subject">
+          <textarea class="contact-text" placeholder="Enter a message">Enter your message</textarea>
+          <input type="submit" class="contact-form-btn" value="Send">
+        </form>
+      </section>
+    </div>
+    <!-- Other communication preferences section of the page -->
+    <div class="heading">
+      <h1>Other communication preferences</h1>
+    </div>
+    <!-- Provide links to other external social media platforms to contact me in case if the contact form doesn't work -->
+    <section class="sectionContent">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/leon-l-826907198/" target="_blank">Click here to access my Linkedin</a></li>
+        <li><a href="https://www.instagram.com/leonwastaken_/" target="_blank">Click here to access my Instagram</a></li>
+        <li><a href="https://twitter.com/leondaventus" target="_blank">Click here to access my Twitter</a></li>
+      </ul>
+    </section>
+  </body>
+</html>

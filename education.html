@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Changes title of the webpage according to what webpage the user is on-->
+    <title>Education | Leon Luc</title>
+    <!--Controls page's dimensions and scaling depending on the screen-width of the device being used-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Defines the description of the web page-->
+    <meta name="description" content="Home page of Leon Luc's website."/>
+    <!--Uses the UTF-8 character set, which covers almost all of the characters and symbols in the world-->
+    <meta charset="UTF-8">
+    <!--Links CSS stylesheet style.css with home.html -->
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <!--Imports font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <!--Top navigation bar code-->
+    <nav>
+      <!--Imports hamburger icon from font awesome-->
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <!--Logo of my website can be clicked on to take users back to the home page-->
+      <a href="home.html">
+        <img src="images/logo.png" alt="Click to go back to the home page" class="logo" height="100"/>
+      </a>
+      <ul>
+        <!-- List of links to form the navigation bar of my website  -->
+        <li><a href="home.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a class="active" href="education.html">Education</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Education section of the page -->
+    <div class="heading">
+      <h1>Education</h1>
+    </div>
+    <!-- Information about the school I'm currently attending - UCL -->
+    <div id="edu">
+      <img src="images/ucl.jpg" alt="UCL logo" height="100" width="100"/>
+      <h2>University College London</h2>
+      <h3>BSc (Hons) Information Management for Business, 2021-2024</h3>
+        <p>A joint IT and Management degree developed in conjunction with several leading employers across Banking, Consulting and Tech sectors.</p><br>
+        <p>Relevant modules: Business Intelligence, Consumer, Market and Industry Research, Programming, Web Technologies.</p><hr>
+    </div>
+    <!-- Information about the school I attended for previous qualifications - Beths Grammar School -->
+    <div id="edu1">
+      <img src="images/beths.png" alt="Beths Grammar School logo" height="100" width="100"/>
+      <h2>Beths Grammar School</h2>
+      <h3>A Levels: Maths, Biology and Computer Science, 2019-2021</h3>
+      <ul>
+        <li>Completed a word game project (called Word & Jack) coded using C# in Unity, ultimately achieving an A* (63/70).</li>
+        <li>Worked dependently in groups of 4 students in Biology class to complete laboratory experiments.</li>
+        <li>Expert with numbers, equations and presented statistical data in Mathematics class.</li>
+      </ul>
+    </div><hr>
+    <!-- Information about the summer school I attended - University of Surrey -->
+    <div id="edu2">
+      <img src="images/surrey.jpg" alt="University of Surrey logo" height="100" width="100"/>
+      <h2>University of Surrey</h2>
+      <h3>Engineering & Physical Sciences Summer School, 2020</h3>
+      <p>Spent 1 week pariticipating in UoS' Engineering & Physical Sciences Summer School.</p><br>
+      <p>Completed a presentation on 'What can the CIA do/implement to protect themselves against insider threats using cryptology?'</p>
+    </div><hr>
+    <!-- Skills table with 4 rows, 2 columns and a border with width 1 pixel -->
+    <div class="heading">
+      <h1>Skills</h1>
+    </div>
+    <div style="overflow-x:auto;">
+      <table>
+        <tr>
+          <th>Skill Types</th><th>Skills</th>
+        </tr>
+        <tr>
+          <td>Industry Knowledge</td><td>Banking; Consulting; Business; Engineering; Mathematics; Programming; Biology; Business Intelligence; Computer Science; IT</td>
+        </tr>
+        <tr>
+          <td>Technologies & Tools</td><td>HTML; Python; C#; CSS; JavaScript; Unity, Cryptography</td>
+        </tr>
+        <tr>
+          <td>Interpersonal</td><td>Presentation; Communication; Teamwork; Time Management; Business Management; Leadership</td>
+        </tr>
+      </table>
+    </div>
+    <section class="section3">
+    </section>
+  </body>
+</html>

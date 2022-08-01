@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Changes title of the webpage according to what webpage the user is on-->
+    <title>Work Experience | Leon Luc</title>
+    <!--Controls page's dimensions and scaling depending on the screen-width of the device being used-->
+    <meta name="viewport" content="width=device-width"/>
+    <!--Defines the description of the web page-->
+    <meta name="description" content="Home page of Leon Luc's website."/>
+    <!--Uses the UTF-8 character set, which covers almost all of the characters and symbols in the world-->
+    <meta charset="UTF-8">
+    <!--Links CSS stylesheet style.css with home.html -->
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <!--Imports font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <!--Top navigation bar code-->
+    <nav>
+      <!--Imports hamburger icon from font awesome-->
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <!--Logo of my website can be clicked on to take users back to the home page-->
+      <a href="home.html">
+        <img src="images/logo.png" alt="Click to go back to the home page" class="logo" height="100"/>
+      </a>
+      <ul>
+        <!-- List of links to form the navigation bar of my website  -->
+        <li><a href="home.html">Home</a></li>
+        <li><a class="active" href="work.html">Work</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Work experience section of the page -->
+    <div class="heading">
+      <h1>Work experience</h1>
+    </div>
+    <!-- Information about my first work experience at Barclays -->
+    <div id="wkexp">
+      <img src="images/barclays.jpg" alt="Barclays logo"/>
+      <h2>Banking Intern</h2>
+      <h3>Barclays UK, Aug 2018</h3>
+      <p>2 weeks work experience with a team of 14 employees at the Southampton Row Barclays branch.</p>
+      <ul>
+        <li>Shadowed an assistant manager in areas such as lending.</li>
+        <li>Handled a whole range of administrative procedures including answering the telephone, word processing, photocopying, filing, and taxing.</li>
+        <li>Complied with company safety policy and risk assessments.</li>
+        <li>Answered customer enquiries and assisted customers with ATMs.</li>
+      </ul><hr>
+    </div>
+    <!-- Information about my second work experience at Waitrose-->
+    <div id="wkexp1">
+      <img src="images/waitrose.jpg" alt="Waitrose logo"/>
+      <h2>Sales assistant</h2>
+      <h3>Waitrose UK, July 2018</h3>
+      <p>2 weeks work experience in Marylebone with a team of 20 employees</p>
+      <ul>
+        <li>Cleaned and stacked shelves and kept stocks neat and tidy.</li>
+        <li>Helped customers with all enquiries.</li>
+        <li>Complied with company safety policy and risk assessments.</li>
+        <li>Removed goods from shelves which were past their sell by-date.</li>
+      </ul>
+    </div><hr>
+    <!-- Future career plans section of the page -->
+    <div class="heading">
+      <h1>Future career plans:</h1>
+    </div>
+      <ol class="sectionList">
+        <li>Become a spring intern at companies like JP Morgan, HSBC, UBS, Deloitte etc, hopefully work as a summer intern next year for either of them and then do a grad scheme with either of them.</li>
+        <li>Set up my own indie game company. I most likely have to develop and brush up on my computer science knowledge after my degree before I pursue that goal.</li>
+        <li>Long dreamt of becoming an airline pilot since I was younger so I want to turn that dream into a reality one day.</li>
+      </ol>
+    <div class="images"><img src="images/pilot.jpg" alt="Photo of my flight travel" height="300" width="300" class="img-fluid" id="Pilot"></div>
+    <section class="sectionContent">
+      <p><em>Very big ambitions, I know. Hopefully these will all work out if I try my absolute hardest!</em></p>
+    </section>
+  </body>
+</html>

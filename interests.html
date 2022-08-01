@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Changes title of the webpage according to what webpage the user is on-->
+    <title>Interests | Leon Luc</title>
+    <!--Controls page's dimensions and scaling depending on the screen-width of the device being used-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Defines the description of the web page-->
+    <meta name="description" content="Home page of Leon Luc's website."/>
+    <!--Uses the UTF-8 character set, which covers almost all of the characters and symbols in the world-->
+    <meta charset="UTF-8">
+    <!--Links CSS stylesheet style.css with home.html -->
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <!--Imports font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <nav>
+      <!--Imports hamburger icon from font awesome-->
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <!--Logo of my website can be clicked on to take users back to the home page-->
+      <a href="home.html">
+        <img src="images/logo.png" alt="Click to go back to the home page" class="logo">
+      </a>
+      <ul>
+        <!-- List of links to form the navigation bar of my website  -->
+        <li><a href="home.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a class="active" href="interests.html">Interests</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Video gaming section of the page -->
+    <div class="heading">
+      <h1>Video Gaming</h1>
+    </div>
+    <!-- Information about the game I created using the Unity game engine -->
+    <section class="sectionContent">
+      <p>I've always been interested in running my own indie video game company in the future once I have developed both my business management and computer science skills. Experience at a video game company in either the business or software engineering side of the workspace will be very beneficial.</p><br>
+      <p>My first video game is called Words & Jack which is coded using the C# programming language on Unity. It took nearly 7 months to create, making video games ain't easy. Here is a short video of how it is played:</p>
+      <video width="320" height="240" controls>
+        <source src="videos/video.mp4" type="video/mp4">
+        <source src="video.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+      <p><br>Here are my favorite games of all time. These are the games I will be inspired the most from when working in the video game industry:</p>
+    </section>
+    <!-- Information about my favourite video games. Provided a list just in case users cannot see the 3x3 grid-->
+    <section class="sectionList">
+      <ol>
+        <li>Halo 3</li>
+        <li>Witcher 3</li>
+        <li>Dark Souls 3</li>
+        <li>Pokemon Platinum</li>
+        <li>COD: Black Ops</li>
+        <li>Minecraft</li>
+        <li>GTA 5</li>
+        <li>Star Wars: Battlefront 2 (2005)</li>
+        <li>God of War (2018)</li>
+      </ol>
+    </section>
+    <!-- Information about my favourite video games. Provided a 3x3 grid with images corresponding to each video game -->
+    <div id="showgrid">
+      <div class="row">
+        <div class="column"><img src="images/halo.jpg" alt="Halo 3" height="230" width="230"/></div>
+        <div class="column"><img src="images/witcher.jpg" alt="Witcher 3" height="230" width="230"/></div>
+        <div class="column"><img src="images/pokemon.jpg" alt="Pokemon Platinum" height="230" width="230"/></div>
+      </div>
+      <div class="row">
+        <div class="column"><img src="images/ds3.jpg" alt="Dark Souls 3" height="230" width="230"/></div>
+        <div class="column"><img src="images/cod.png" alt="COD: Black Ops" height="230" width="230"/></div>
+        <div class="column"><img src="images/mc.png" alt="Minecraft" height="230" width="230"/></div>
+      </div>
+      <div class="row">
+        <div class="column"><img src="images/gta.png" alt="GTA 5" height="230" width="230"/></div>
+        <div class="column"><img src="images/sw.jpg" alt="Star Wars Battlefront 2 (2005)" height="230" width="230"/></div>
+        <div class="column"><img src="images/gow.jpg" alt="God of War (2018)" height="230" width="230"/></div>
+      </div>
+    </div>
+    <!-- Credits to the creator of each image -->
+    <div class="interestsSection">
+    <div id="credit">
+      <p>Fig.1 - Bungie/Microsoft</p>
+      <p>Fig.2 - CD Projekt Red</p>
+      <p>Fig.3 - Game Freak/Nintendo</p>
+      <p>Fig.4 - Bandi Namco/FromSoftware</p>
+      <p>Fig.5 - Activision/Treyarc</p>
+      <p>Fig.6 - Mojang</p>
+      <p>Fig.7 - Rockstar Studios</p>
+      <p>Fig.8 - Lucasarts/Disney</p>
+      <p>Fig.9 - Sony Santa Monica</p>
+    </div>
+    <!-- Arts, media and drama section of the page -->
+    <div class="heading">
+      <h1>Arts, media and drama</h1>
+    </div>
+    <!-- Information about winning a drawing competition and performing at the Platform Theatre -->
+    <section class="sectionContent">
+      <p>Aside from my tech side, I'm also interested in arts and media. I believe having a blend of both creative and technical skills is very beneficial as innovation in tech doesn't come without creativity.</p>
+      <p>I won a drawing competition hosted by MP Mike Freer, which I had briefly mentioned on the home page.</p>
+      <p>I also rehearsed and performed in a production of Macbeth in the Platform Theatre, University of the Arts, London from September to November 2015. I played the character of Macduff in front of hundreds of parents and visitors. <em>It was nervewracking to say the least.</em></p>
+      <ul>
+        <li>I memorised key dialogue and stage directions before rehearsals and the ultimate performance, developing time management skills.</li>
+        <li>I was able to perform under immense pressure to meet audience’s and teacher’s expectations.</li>
+      </ul>
+    </section>
+    </div>
+    <div class="interestsSection">
+    <!-- Sports section of the page -->
+    <div class="heading">
+      <h1>Sports</h1>
+    </div>
+    <!-- Information about the time I was a badminton captain and other sports that I enjoy playing -->
+    <section class="sectionContent">
+      <p>I was a captain for a badminton team which consisted of eight players from February to May 2017 during secondary school.</p><br>
+      <ul>
+        <li>I improved my leadership, teamwork, and management skills. </li>
+        <li>I organised matches to play against different schools.</li>
+        <li>I wrote and delivered reports back to head of PE department to inform about the current state of the team.</li>
+      </ul><br>
+      <p>I played tennis very regularly since I was 9 years old. Other sports I've played includes football, basketball, table tennis and baseball.</p><br>
+    </section>
+    </div>
+  </body>
+</html>

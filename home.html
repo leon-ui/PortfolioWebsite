@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Changes title of the webpage according to what webpage the user is on-->
+    <title>Home | Leon Luc</title>
+    <!--Controls page's dimensions and scaling depending on the screen-width of the device being used-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Defines the description of the web page-->
+    <meta name="description" content="Home page of Leon Luc's website."/>
+    <!--Uses the UTF-8 character set, which covers almost all of the characters and symbols in the world-->
+    <meta charset="UTF-8">
+    <!--Links CSS stylesheet style.css with home.html -->
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <!--Imports font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <!--Top navigation bar code-->
+    <nav>
+      <!--Imports hamburger icon from font awesome-->
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <!--Logo of my website can be clicked on to take users back to the home page-->
+      <a href="home.html">
+        <img src="images/logo.png" alt="Home" class="logo" height="100"/>
+      </a>
+      <ul>
+        <!-- List of links to form the navigation bar of my website  -->
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!--My portrait-->
+    <div id="myPortrait">
+      <img src="images/leonluc.jpg" alt="Portrait of Leon Luc" height="480" width="350" class="img-fluid"/>
+    </div>
+    <!--Introduction-->
+    <div id="mainArea1" class="sectionContent">
+      <section>
+        <h1>Hello. 你好。Xin chào.</h1>
+        <h2>I am Leon Luc.</h2>
+        <p>I am a UCL student studying BSc Information Management for Business. I'm so excited about what my future entails at UCL.</p>
+      </section>
+    </div>
+    <!--Facts section of the page-->
+    <div id="mainArea2">
+      <section class="sectionContent">
+        <h3>Top 10 interesting facts about me:</h3>
+      </section>
+        <ol class="sectionList">
+          <li>I am a UK national, born and raised in London and I am half ethnic Chinese and half ethnic Vietnamese.</li>
+          <li>If I could live anywhere in the world, it would be Singapore.</li>
+          <li>My most embarrassing moment was during camping. I was running in the middle of the field at night and chose not to use my flashlight and then I fell into a lake. Thankfully it was shallow.</li>
+          <li>Accomplishments I'm particularly proud of are making it onto the my borough's newspaper and making it into UCL of course!</li>
+          <li>If I could have any superpower, it would definitely be telekinesis, in other words, to use the force. I'm a huge Star Wars fan if you can't tell.</li>
+          <li>I have been diagnosed with eczema since I was born. It's not the most pleasant thing to live with every day.</li>
+          <li>My favorite cuisine has got to be Italian.</li>
+          <li>I am 5'9. Am I happy with my height, so-so. Do I want to become taller, most definitely!</li>
+          <li>One thing I'm very afraid of are insects however I'm fascinated by bees and ants from a safe distance.</li>
+          <li>If I could keep any animal as a pet, I would choose a red panda. They're so cute.</li>
+        </ol>
+        <img src="images/newspaper.PNG" alt="Picture of me with MP Mike Freer when I won his drawing competition" class="img-fluid" id="Win">
+    </div>
+    <!--Guidance for the user to conduct an action (to move to another HTML page)-->
+    <div id="mainArea3" class="sectionContent">
+      <section>
+        <p> If you want to know more about me, please click the tabs at the top of the page. Before you do, please read this quote:</p>
+        <br>
+        <p><q><em>Success is not final; Failure is not fatal. It is the courage to continue that counts.</em></q> - Winston Churchill </p>
+      </section>
+    </div>
+  </body>
+</html>
